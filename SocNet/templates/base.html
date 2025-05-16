@@ -1,11 +1,54 @@
+{% load static %}
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>{% block title %} {% endblock %}</title>
+        {% block links %} 
+        
+        {% endblock %}
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
     </head>
     <body>
-    {% block content %}
-    {% endblock %}
+        <header>
+            <div class = "logo-div">
+                <img src="{% static 'images/wit_logo.png' %}">
+            </div>
+            
+            <div class = "links-div">
+                <div class = "linkdiv">
+                    <div class = "icondiv"><img src="{% static 'images/header_icons/house.png' %}"></div>
+                    <a href = "{% url 'home' %}">Головна</a>
+                </div>
+                <div class = "linkdiv">
+                    <div class = "icondiv"><img src="{% static 'images/header_icons/picture.png' %}"></div>
+                    <a href = "">Мої публікації</a>
+                </div>
+                <div class = "linkdiv">
+                    <div class = "icondiv"><img src="{% static 'images/header_icons/people.png' %}"></div>
+                    <a href = "">Друзі</a>
+                </div>
+                <div class = "linkdiv">
+                    <div class = "icondiv"><img src="{% static 'images/header_icons/chat.png' %}"></div>
+                    <a href = "">Чати</a>
+                </div>
+                <div class = "linkdiv">
+                    <div class = "icondiv"><img src="{% static 'images/header_icons/settings.png' %}"></div>
+                    <a href = "">Налаштування</a>
+                </div>
+
+                <div class = "linkdiv exitlink">
+                    <div class = "icondiv"><img src="{% static 'images/header_icons/exit.png' %}"></div>
+                    <form method="post" action=""><a href = "{% url 'logout' %}">Вихід</a></form>
+                    
+                </div>
+
+            </div>
+            
+        </header>
+        {% block content %}
+
+        {% endblock %}
+        
     </body>
 </html>

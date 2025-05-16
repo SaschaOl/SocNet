@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'GTWalsheim';
+    src: url('../fonts/gt_walsheim_medium.otf');
+} /* format('truetype') */
+
+body {
+    background-color: rgb(233, 229, 238);  
+}
+
+header {
+    background-color: white;
+    height: 13vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-grow: 1;
+    padding-left: 5vw;
+}
+
+.logo-div img{
+    height: 25%;  
+}
+
+.links-div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    font-family: 'GTWalsheim';
+    
+    padding-right: 5vw;
+}
+
+.linkdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 2.5vw;
+}
+
+.linkdiv a{
+    font-size: 16px;
+    text-decoration: 0;
+    color: rgb(7, 10, 28);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+.icondiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5vh;
+    width: 2.5vh;
+    margin-right: 1vw;
+}
+
+.icondiv img{
+    /* height: 4vh; */
+    width: 3vh; 
+}
+
+.exitlink{
+    border: 2px solid rgb(84, 60, 82);
+    border-radius: 1234px;
+    /* height: 6vh; */
+    padding: 2vh 3.5vh;
+}
+
+.exitlink form {
+    height: auto;
+    width: auto;
+}

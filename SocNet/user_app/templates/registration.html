@@ -1,12 +1,30 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block links %}
+    <link rel="stylesheet" href = "{% static 'css/registration.css' %}">
+{% endblock %}       
 
 {% block content %}
-    {% if user.is_authenticated %}
-        <h2>Ви увійшли як {{ user.email }}</h2>
-    {% endif %}
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Submit</button>
-    </form>
+    <div class="align-div">
+        <div class = "frame">
+            <div class="links">
+                <a id = "page" href = "">Реєстрація</a>
+                <a href = "">Авторизація</a>
+            </div>
+            <h1>Приєднуйся до World IT</h1>
+            <form method="post">
+            {% csrf_token %}
+                {% for field in form %}
+                    <div class = "form-field">
+                        {{ field.label_tag }}
+                        {{ field }}
+                    </div>
+                {% endfor %}
+            <button type="submit">Створити акаунт</button>
+            </form>
+        </div>
+    </div>
+    
+  
 {% endblock %}
