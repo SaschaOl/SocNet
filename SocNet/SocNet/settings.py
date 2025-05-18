@@ -84,7 +84,8 @@ DATABASES = {
 
 AUTH_USER_MODEL = "user_app.SocNetUser"
 
-LOGIN_REDIRECT_URL = "/user/registration/"
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = "home"
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators

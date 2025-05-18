@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    margin: 50 80 50 80;
+    font-family: 'GTWalsheim';
+}
+
+.profile{
+    margin: 50 80 50 80;
+    background-color: white;
+    border: 2px solid #CDCED2;
+    border-radius: 10px;
+    width: 30%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 2vh;
+}
+
+.indicator{
+    width: 20%;
+    height: 20%;
+}
+
+.subscribers{
+    display: flex;
+    flex-direction: row;
+}
+
+.statics{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    width: 100px;
+    border-right: 1px solid #81818D;
+}
+
+h5{
+    font-size: 20px;
+     color: #070A1C;
+}
+.text{
+    font-size: 16px;
+    color: #81818D;
+}
+
+.requests{
+    margin: 50 80 50 80;
+    background-color: white;
+    border: 2px solid #CDCED2;
+    border-radius: 10px;
+    width: 30%;
+    height: 50%; 
+    padding: 3vh;
+
+}
+
+
+.icon-div{
+    display: flex;
+    flex-direction: row;
+    gap: 3vh;
+}
+
+.icon{
+    display: flex;
+    flex-direction: row;
+    gap: 3vh;
+}
+
+
+
+
+
+.message{
+    margin: 50 80 50 80;
+    background-color: white;
+    border: 2px solid #CDCED2;
+    border-radius: 10px;
+    width: 30%;
+    height: 50%;  
+}
