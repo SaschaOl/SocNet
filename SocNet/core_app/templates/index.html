@@ -7,74 +7,185 @@
 
 
 {% block content %}
+    <div class = "mainpage">
     <div class = "block">
-        <div class = "profile">
-            <img class = "indicator" src="{% static 'images/Indicator.png' %}">
-            <h2>Lina Li</h2>
-            <p>@thelili</p>
-            <div class = "subscribers">
-                <div class = "statics">
-                   <h5>566</h5>
-                    <p class="text">Дописи</p> 
-                </div>
-                <div class = "statics">
-                    <h5>12.1K</h5>
-                    <p class="text">Читачі</p>
-                </div>                
-              <div class = "statics">
-                <h5>222</h5>
-                <p class="text">Друзі</p>
-              </div>
-            </div>  
-        </div>
-        <div class = "requests">
-            <div class = "icon-div">
-                <img src="{% static 'images/Vector.png' %}">
-                <p>Запити</p>
-                <p>Дивитись всі</p>
+            <div class = "profile">
+                <img class = "indicator" src="{% static 'images/Indicator.png' %}">
+                <h2>Lina Li</h2>
+                <p>@thelili</p>
+                <div class = "subscribers">
+                
+                    <div class = "statics">
+                    <h5>566</h5>
+                        <p class="text">Дописи</p> 
+                    </div>
+                    
+                    <div class = "border-static"></div>
+                    
+                    <div class = "statics">
+                        <h5>12.1K</h5>
+                        <p class="text">Читачі</p>
+                    </div>   
+                    
+                    <div class = "border-static"></div>
+                             
+                    <div class = "statics">
+                        <h5>222</h5>
+                        <p class="text">Друзі</p>
+                    </div>
+                    
+                </div>  
             </div>
-            <div class = "icon">
-                <img src="{% static 'images/Avatar.png' %}">
-                <p>Yehor Aung</p>
-                <p>4.3к підписників</p>
-            </div>
-            <div class = "icon">
-                <img src="{% static 'images/Avatar (1).png' %}">
-                <p>Ann Ann</p>
-                <p>1.6к підписників</p>
-            </div>
-            <div class = "icon">
-                <img src="{% static 'images/Avatar (2).png' %}">
-                <p>Yeugen Jenua</p>
-                <p>10.3к підписників</p>
-            </div>
-        </div>    
-        <div class = "message">
+
+            <div class = "requests">
                 <div class = "icon-div">
-                    <img src="{% static 'images/Group.png' %}">
-                    <p>Повідомлення</p>
-                    <p>Дивитись всі</p>
+                    <div class="left-part">
+                        <img src="{% static 'images/Vector.png' %}">
+                        <p class="queries">Запити</p>
+                    </div>
+                    <p class="watch-all">Дивитись всі</p>
                 </div>
                 <div class = "icon">
-                    <img src="{% static 'images/Avatar (3).png' %}">
-                    <p>Mona Lisa</p>
-                    <p>Привіт! Як справи ?</p>
-                    <p>09:41</p>
+                    <img class = "foto" src="{% static 'images/Avatar.png' %}">
+                    <div class="icon-text">
+                        <p class="name">Yehor Aung</p>
+                        <p class="followers">4.3к підписників</p>
+                    </div>
                 </div>
                 <div class = "icon">
-                    <img src="{% static 'images/Avatar (4).png' %}">
-                    <p>Ann Ti</p>
-                    <p>Привіт!</p>
-                    <p>25.04.2025</p>
+                    <img class = "foto" src="{% static 'images/Avatar (1).png' %}">
+                    <div class="icon-text">
+                        <p class="name">Ann Ann</p>
+                        <p class="followers">1.6к підписників</p>
+                    </div>
                 </div>
                 <div class = "icon">
-                    <img src="{% static 'images/Avatar (5).png' %}">
-                    <p>Ness Ty</p>
-                    <p>Привіт!</p>
-                    <p>25.04.2025</p>
+                    <img class = "foto" src="{% static 'images/Avatar (2).png' %}">
+                    <div class="icon-text"> 
+                        <p class="name"></p>Yeugen Jenua</p>
+                        <p class="followers">10.3к підписників</p>
+                    </div>
                 </div>
+            </div>    
+
+            <div class = "message">
+                <div class = "icon-nav">
+                    <div class="left-part">
+                        <img src="{% static 'images/Group.png' %}">
+                        <p class="queries">Повідомлення</p>
+                    </div>
+                    <p  class="watch-all">Дивитись всі</p>
+                </div>
+                    <div class = "div-text">
+                    <img  class = "picture" src="{% static 'images/Avatar (3).png' %}">
+                        <div class="icon-content"> 
+                        <p class="name">Mona Lisa</p>
+                        <p class="time">09:41</p>
+                        <p class="followers">Привіт! Як справи ?</p>
+                        
+                    </div>
+                </div>
+                <div class = "div-text">
+                    <img class = "picture" src="{% static 'images/Avatar (4).png' %}">
+                    <div class="icon-content"> 
+                        <p  class="name">Ann Ti</p>
+                        <p class="followers">Привіт!</p>
+                        <p class="time">25.04.2025</p>
+                    </div>
+                </div>
+                <div class = "icon">
+                    <img class = "picture"  src="{% static 'images/Avatar (5).png' %}">
+                    <div class="icon-content"> 
+                        <p  class="name">Ness Ty</p>
+                        <p class="time">25.04.2025</p>
+                            <p class="followers">Привіт!</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        
+        <div class = "mainblock">
+            <div class = "publication-text">
+                <textarea placeholder = "Текст публікації"></textarea>
+                <img src = "{% static 'images/smile.png' %}" alt="">
+                <button class = "checkout">Перейти до оформлення</button> 
+            </div>   
+            <div class = "main">
+               {% for post in post_list %}
+            <div>
+                <div class = "title-post">
+                    <div class = "name-title">
+                        <img src="{% static 'images/indicator.png' %}" alt="">
+                        <p>Lina Li</p>
+                    </div>
+                    <button class="button-title">
+                        <img src="" alt="|">
+                    </button>
+                </div>
+                <h1>{{ post.title }}</h1>
+
+                <p class = "post-text">{{ post.post_text }}</p>
+                <div class = "img-posts">
+                    {% for image in post.images.all %}
+                        <img src="{{ image.file.url }}" alt="" class = "img-post">
+                    {% endfor %}
+                </div>
+                <div id="actionMenu-{{ post.id }}">
+                    <button id="deletePost">Видалити</button>
+                    <button id="editPost">Редагувати</button>
+                </div>
+            </div>
+            {% endfor %}
+            </div>
         </div>
-    </div>        
+    </div>
+
+    <form method="post" action="{% url 'create_post' %}" enctype="multipart/form-data" hidden>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Створити</button>
+    </form>
+
+    <form action="">
+        <label> Назва публікації</label>
+        <input type="text" name="title" placeholder="Природа, книги та спокій 🌿">
+
+        <label> Тема публікації </label>
+        <input type="text" name="topic" placeholder="Напишить тему публікації">
+        <div class="tag">
+            <span> #Відпочинок</span> <span>#натхнення</span> <span>#життя</span> <span>#природа</span> <span>#читання</span>
+            <span>#спокій</span> <span>#гармонія</span> <span>#музика</span> <span>#фільми</span> <span>#подорожі</span>
+        </div>
+
+        <label>Опис</label>
+        <textarea name="description" rows="4">
+        Інколи найкращі ідеї народжуються в тиші.
+        Природа, книги і спокій — усе, що потрібно, аби перезапуститись.
+        #відпочинок #натхнення #життя #природа #спокій #гармонія 
+        </textarea>
+
+        <label>Посилання</label>
+        <input type="text" name="link" value="https://www.instagram.com/world.it....">
+
+        <div class="image-preview-container horizontal">
+      <div class="image-card" style="background-image: url('image1.jpg');">
+        <button class="delete-btn">🗑️</button>
+      </div>
+      <div class="image-card" style="background-image: url('image2.jpg');">
+        <button class="delete-btn">🗑️</button>
+      </div>
+      <div class="image-card" style="background-image: url('image3.jpg');">
+        <button class="delete-btn">🗑️</button>
+      </div>
+    </div>
+
+    <button type="submit">Створити</button>
+  </form>
+
+        
+        </div>
+
+    </form>
 
 
-{% endblock %}
+{% endblock %}  

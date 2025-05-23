@@ -6,29 +6,30 @@
 .block{
     display: flex;
     flex-direction: column;
-    margin: 50 80 50 80;
     font-family: 'GTWalsheim';
+    padding: 0 5vw;
+    margin: 20 10 0 2;
+    gap: 0.5vw;
+
 }
 
 .profile{
-    margin: 50 80 50 80;
     background-color: white;
     border: 2px solid #CDCED2;
     border-radius: 10px;
-    width: 30%;
-    height: 50%;
+    width: 25vw;
+    height: 19vw;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px;
-    gap: 2vh;
+    gap: 1vh;
 }
 
 .indicator{
-    width: 20%;
-    height: 20%;
+    width: 6vw;
+    height: 6vw;
 }
 
 .subscribers{
@@ -41,7 +42,11 @@
     flex-direction: column;
     gap: 2vh;
     width: 100px;
-    border-right: 1px solid #81818D;
+}
+
+.border-static{
+   background-color:#81818D;
+   width: 1px;
 }
 
 h5{
@@ -54,14 +59,15 @@ h5{
 }
 
 .requests{
-    margin: 50 80 50 80;
     background-color: white;
     border: 2px solid #CDCED2;
     border-radius: 10px;
-    width: 30%;
-    height: 50%; 
+    width: 22vw;
+    height: 19vw; 
     padding: 3vh;
-
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
 }
 
 
@@ -78,14 +84,87 @@ h5{
 }
 
 
-
-
-
 .message{
-    margin: 50 80 50 80;
     background-color: white;
     border: 2px solid #CDCED2;
     border-radius: 10px;
-    width: 30%;
-    height: 50%;  
+    width: 30vw;
+    height: 40vw; 
+    width: 25vw;
+    height: 19vw; 
+    
+}
+
+.mainblock{
+    background-color: white; 
+    border: 2px solid #CDCED2;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    display: flex;
+    padding: 0 5vw;
+    margin: 20 10 0 2 ;
+}
+
+
+.mainpage{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.all-posts{
+    width: 923px;
+    height: 622px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px #CDCED2;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+
+}
+
+.img-posts{
+    width: 883px;
+    height: 327px;
+    gap: 16px;
+}
+
+.img-post{
+    width: 283.67px;
+    height: 327px;
+    border-radius: 16px;
+}
+
+.title-post{
+    background-color: white;
+    width: 923px;
+    height: 89px;
+    border: 1px #CDCED2;
+    padding: 20px;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.post-text{
+    background-color: white;
+    width: 883px;
+    height: 120px;
+    border: 1px #CDCED2;
+    padding: 16px;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.name-title{
+    width: 366.5px;
+    height: 46px;
+    gap: 10px;
+}
+
+.button-title{
+    width: 20px;
+    height: 20px;
 }

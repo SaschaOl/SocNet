@@ -1,0 +1,54 @@
+.all-posts{
+    width: 923px;
+    height: 622px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px #CDCED2;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+
+}
+
+.img-posts{
+    width: 883px;
+    height: 327px;
+    gap: 16px;
+}
+
+.img-post{
+    width: 283.67px;
+    height: 327px;
+    border-radius: 16px;
+}
+
+.title-post{
+    background-color: white;
+    width: 923px;
+    height: 89px;
+    border: 1px #CDCED2;
+    padding: 20px;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.post-text{
+    background-color: white;
+    width: 883px;
+    height: 120px;
+    border: 1px #CDCED2;
+    padding: 16px;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.name-title{
+    width: 366.5px;
+    height: 46px;
+    gap: 10px;
+}
+
+.button-title{
+    width: 20px;
+    height: 20px;
+}

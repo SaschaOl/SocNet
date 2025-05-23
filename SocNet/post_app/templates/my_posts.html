@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block links %}
+    <link rel="stylesheet" href="{% static 'css/my_posts.css' %}">
+    <script src="{% static 'js/deletionForm.js' %}" defer></script>
+{% endblock %}
+
+{% block content %}
+    <div class = "all-posts">
+        {% for post in post_list %}
+            <div>
+                <div class = "title-post">
+                    <div class = "name-title">
+                        <img src="{% static 'images/indicator.png' %}" alt="">
+                        <p>Lina Li</p>
+                    </div>
+                    <button class="button-title">
+                        <img src="" alt="|">
+                    </button>
+                </div>
+                <h1>{{ post.title }}</h1>
+
+                <p class = "post-text">{{ post.post_text }}</p>
+                <div class = "img-posts">
+                    {% for image in post.images.all %}
+                        <img src="{{ image.file.url }}" alt="" class = "img-post">
+                    {% endfor %}
+                </div>
+                <div id="actionMenu-{{ post.id }}">
+                    <button id="deletePost">Видалити</button>
+                    <button id="editPost">Редагувати</button>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <form id="deletionForm" method="post" action="{% url 'delete_post' %}">
+        {% csrf_token %}
+        {{ deletion_form.post_id }}
+    </form>
+{% endblock %}
